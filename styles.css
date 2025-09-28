@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
+  font-size: 18px;
+  color: #2d3748;
+}
+
+.profile-photo {
+  border-radius: 50%;
+}
+
+.blog-image {
+  float: right;
+  margin-left: 20px;
+}
+
+.browsing-image {
+  float: left;
+  margin-right: 20px;
+}
+
+.clear-image {
+  clear: both;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr, 300px;
+  grid-template-rows: auto, 1fr;
+  gap: 20px;
+}
+
+header {
+  background-color: #63b3ed;
+  color: #fff;
+  padding: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  grid-column: span 2;
+  grid-row: 1;
+}
+
+main {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 20px;
+}
+
+aside {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #48bb78;
+}
+
+.post-meta {
+  color: #718096;
+}
+
+.social-media,
+.archives {
+  color: #48bb78;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about {
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #E2E8F0;
+}
+
+footer {
+  background-color: #2C5282;
+  color: #fff;
+}
